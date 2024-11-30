@@ -1,0 +1,173 @@
+.player-container {
+  width: 70%;
+  background-color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-wrapper {
+  position: relative;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: filter 0.3s ease; /* Smooth transition for blur */
+}
+
+.controls-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.video-wrapper:hover .controls-overlay {
+  opacity: 1;
+}
+
+.control-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.control-button i {
+  pointer-events: none;
+}
+
+.control-button:hover {
+  color: #9147ff;
+  transform: scale(1.1);
+}
+
+.controls-left,
+.controls-right {
+  display: flex;
+  align-items: center;
+}
+
+.controls-center {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #333;
+  height: 10px;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.progress {
+  background-color: #9147ff;
+  width: 0%;
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+
+.time-display,
+.time-total {
+  color: white;
+  font-size: 14px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.controls-right .time-total {
+  margin-right: 10px;
+}
+
+/* Volume Control */
+.volume-control {
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-right: 13px; /* Move the volume icon left by increasing margin-right */
+}
+
+#volume-slider {
+  width: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: none; /* Initially hidden */
+  background: #9147ff; /* Purple theme */
+}
+
+.volume-control:hover #volume-slider {
+  color: #9147ff;
+  display: block; /* Appear on hover */
+}
+
+#volume-slider::-webkit-slider-thumb {
+  background: #9147ff;
+}
+
+#volume-slider::-moz-range-thumb {
+  background: #9147ff;
+}
+
+/* Dropdown settings menu */
+.settings-menu {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  width: 180px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.settings-menu .menu-item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settings-menu .menu-item i {
+  margin-right: 10px;
+}
+
+/* Settings button animation */
+#settings-button.active {
+  transform: rotate(45deg);
+}
+
+/* Menu Styling */
+.settings-menu select,
+.settings-menu input[type="file"] {
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.settings-menu select:hover,
+.settings-menu input[type="file"]:hover {
+  background-color: #444;
+}

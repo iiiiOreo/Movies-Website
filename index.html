@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/landing.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Cina Sphere</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="search-bar-overlay"></div>
+    <header class="container-md">
+      <a href="#" class="logo"
+        ><img src="./images/logo.png" alt="logo" class="logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="./upcoming-folder/upcoming.html">Upcoming</a></li>
+          <li><a href="#shows">Shows</a></li>
+          <li><a href="#series">Series</a></li>
+          <li><a href="#movies">Movies</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- landing -->
+    <section id="landing" class="landing">
+      <div class="container">
+        <div class="overlay"></div>
+        <div class="box active" id="movieDetails">
+          <span class="releaseTime">2022</span>
+          <h1 class="movieTitle">The Batman</h1>
+          <p class="movieDesc">
+            Batman is called to intervene when the mayor of Gotham City is
+            murdered. Soon, his investigation leads him to uncover a web of
+            corruption, linked to his own dark past.
+          </p>
+        </div>
+
+        <div class="btns">
+          <button type="button" class="bttn bttn-primary playBtn">
+            <i class="fa-solid fa-play"></i>
+            <span>Play Now</span>
+          </button>
+          <button type="button" class="bttn bttn--watch watchBtn">
+            <i class="fa-solid fa-play"></i>
+            <span>Watch Trailer</span>
+          </button>
+          <button type="button" class="bttn bttn-add">
+            <i class="fa-regular fa-bookmark"></i>
+            <span>Add to WatchList</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- section latest release -->
+
+    <section class="container section latest">
+      <h1 class="title">Latest Releases</h1>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper" id="movieSliderLatest">
+          <!-- slide 1 -->
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <!-- section trending -->
+    <section class="container section trending">
+      <h1 class="title">Trending Movies & Shows</h1>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper" id="movieSliderTrending">
+          <!-- slide 1 -->
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <section id="series" class="section section--landing landing">
+      <div class="container">
+        <div class="overlay"></div>
+        <div class="box active" id="movieDetails">
+          <div class="info">
+            <h4>This month’s most watched</h4>
+            <span>Watch this month’s most Watched Shows</span>
+          </div>
+          <span class="releaseTime">2017</span>
+          <h1 class="movieTitle">Money Heist</h1>
+          <p class="movieDesc">
+            When the national mint and a touring school group are held hostage
+            by robbers, police believe that the thieves have no way out. Little
+            do they know that the thieves have a bigger plan in store.
+          </p>
+        </div>
+
+        <div class="btns">
+          <button type="button" class="bttn bttn-primary">
+            <i class="fa-solid fa-play"></i>
+            <span>Play Now</span>
+          </button>
+          <button type="button" class="bttn bttn--watch">
+            <i class="fa-solid fa-play"></i>
+            <span>Watch Trailer</span>
+          </button>
+          <button type="button" class="bttn bttn-add">
+            <i class="fa-regular fa-bookmark"></i>
+            <span>Add to WatchList</span>
+          </button>
+        </div>
+
+        <div class="swiper mySwiper slider-swiper">
+          <div class="swiper-wrapper" id="TVSliderTrending">
+            <!-- slide 1 -->
+            <div class="swiper-slide"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <p>Content of Main Page</p> -->
+    <!-- <div id="footer"></div> -->
+
+    <section id="movies" class="container section movies">
+      <h1 class="title">Movies</h1>
+      <div class="swiper topRated">
+        <div class="swiper-wrapper" id="movieSliderTopRated">
+          <!-- slide 1 -->
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <!-- landing section  -->
+    <section id="shows" class="container section shows">
+      <h1 class="title">Shows</h1>
+      <div class="swiper topRated">
+        <div class="swiper-wrapper" id="showsSilderTopRated">
+          <!-- slide 1 -->
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <footer class="footer section">
+      <div class="all-width">
+        <div class="container">
+          <div>
+            <a href="#"><img src="./images/logo.png" alt="logo" /></a>
+            <p>
+              CineSphere is your go-to platform for a world of entertainment,
+              offering a vast library of films, TV shows, and exclusive content.
+            </p>
+            <ul>
+              <li>
+                <a href="#" aria-label="facebook-icon">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" aria-label="twitter-icon">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" aria-label="instagram-icon">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="box">
+            <h2 class="subtitle">Company</h2>
+            <ul class="list">
+              <li>
+                <a href="/play page1/play_page.html" class="link">About us</a>
+              </li>
+              <li><a href="#" class="link">Careers</a></li>
+              <li><a href="#" class="link">Press</a></li>
+              <li><a href="#" class="link">Investors</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <h2 class="subtitle">Help & Support</h2>
+            <ul class="list">
+              <li><a href="#" class="link">Help Center</a></li>
+              <li><a href="#" class="link">FAQs</a></li>
+              <li><a href="#" class="link">Support</a></li>
+              <li><a href="#" class="link">Account & Billing</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <h2 class="subtitle">Legal</h2>
+            <ul class="list">
+              <li><a href="#" class="link">Terms of Services</a></li>
+              <li><a href="#" class="link">Privacy Policy</a></li>
+              <li><a href="#" class="link">Cookie Preferences</a></li>
+              <li><a href="#" class="link">Accessibility</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p>ⓒAll Rights Reserved. 2024 Cinesphere Movies</p>
+    </footer>
+    <script></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
