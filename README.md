@@ -16,6 +16,7 @@ A responsive and interactive web application designed to showcase movies, TV sho
 - **JavaScript**: Implements interactivity and functional components.
 - **Bootstrap**: Ensures a responsive, mobile-friendly grid layout.
 - **FontAwesome**: Enhances visual design with professional icons.
+- **Figma Design**: https://www.figma.com/design/a41EFhU1Y5YFghe5UoUZvh/Untitled?node-id=0-1&t=Pr7vpmupmbrkQFW1-1.
 
 ## File Structure
 - **HTML**: Core pages including `index.html`, `movie.html`, `tv.html`, and more.
