@@ -1,0 +1,50 @@
+.section {
+  padding: 10rem 1rem 0;
+  position: relative;
+  transition: transform 1s, opacity 1s;
+  .title {
+    font-size: 3.4rem;
+    color: var(--main-color);
+    margin-bottom: 4rem;
+  }
+}
+
+.section--landing.landing {
+  background-image: url("../images/IMG-20240909-WA0001.jpg");
+}
+.section--landing {
+  margin-top: 10rem;
+  .container {
+    .box {
+      .info {
+        margin-bottom: 20rem;
+        h4 {
+          font-size: 2.4rem;
+        }
+        span {
+          font-size: 1.4rem;
+          font-weight: 300;
+        }
+      }
+    }
+    .slider-swiper {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 40%;
+      transform: translateY(-50%);
+      overflow: hidden;
+      .swiper-slide {
+        .image {
+          border: 0.5rem solid #7300ff;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      .slider-swiper {
+        display: none;
+      }
+    }
+  }
+}
