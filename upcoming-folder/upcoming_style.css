@@ -1,0 +1,375 @@
+#search-input {
+  padding-left: 8px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 200px;
+  background-color: #7300ff;
+  color: white;
+  font-weight: 700;
+}
+
+/* ################################################ */
+.head-main-container {
+  background-image: url(../images/upcoming-main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.upcoming-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+
+  div[class="row"] {
+    margin-bottom: 15rem;
+  }
+}
+
+.h1-home {
+  color: #ffffff;
+  font-size: 50px;
+  margin-bottom: 1rem;
+}
+
+.p-select {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.p-main-upcoming {
+  width: 60%;
+  color: white;
+  font-size: medium;
+}
+
+select {
+  height: 35px;
+  width: 120px;
+  margin-right: 15px;
+  color: white;
+  background-color: #0e0024;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.select-1 {
+  margin-right: 25px;
+}
+
+::placeholder {
+  font-size: 11px;
+}
+
+.upcoming-movies {
+  padding-block: 5rem;
+  color: #ffffff;
+  user-select: none;
+
+  h1 {
+    margin-bottom: 5rem;
+  }
+
+  .h6-month {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    border-bottom: 1.5px solid var(--secondary-color);
+  }
+}
+
+hr {
+  border: none;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 2px;
+  background-color: #7300ff;
+  margin-right: 20px;
+}
+
+p {
+  font-size: larger;
+}
+
+.h6-month {
+  color: white;
+  font-size: 20px;
+}
+
+.h6-movie-name {
+  font-size: 20px;
+  color: #fff;
+}
+
+.two-div-date {
+  display: flex;
+}
+
+.left-div {
+  width: 50%;
+}
+
+.right-div {
+  width: 50%;
+}
+
+.dateAndImg {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  color: rgb(241, 231, 217);
+  gap: 2rem;
+}
+
+.day {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7300ff;
+  background-color: #0e0024;
+  border: 1.7px solid #7300ff;
+  font-weight: 900;
+  font-size: 35px;
+}
+
+.day-image {
+  width: 94px;
+  height: 83px;
+  border-radius: 20px;
+}
+
+.filmname-p {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.p-wordwide {
+  margin-top: auto;
+  font-size: 14px;
+}
+
+.btn-div {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+#show-btn {
+  height: 25px;
+  color: white;
+  background-color: #0e0024;
+  border: none;
+  border: 0.5px solid white;
+  border-top-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+/* Swiper Style */
+/* Basic styling for the swiper container */
+/* .swiper-js{
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #0C0C0C;
+} */
+.swiper-js {
+  padding-block: 5rem;
+}
+.swiper {
+  width: 100%;
+  height: 400px;
+  padding: 20px 0;
+  user-select: none;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 320px !important;
+  width: 350px !important;
+  padding: 10px;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  transition: transform 0.3s;
+  padding-top: 30px;
+}
+
+.swiper-slide img {
+  width: 320px;
+  height: 200px;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 0px;
+  border: 1px solid #7300ff;
+}
+
+.image-title {
+  padding-top: 10px;
+  color: antiquewhite;
+  font-weight: 100;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.image-vote {
+  font-size: 16px;
+  color: #862af7;
+}
+.swiper-slide:hover {
+  transform: scale(1.05);
+}
+
+/* Swiper pagination */
+.swiper-pagination-bullet {
+  background-color: #7300ff !important;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #7300ff;
+  opacity: 1;
+  margin-top: 40px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px !important;
+  color: #7300ff;
+  background-color: #0e0024;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+  font-size: 1rem;
+  margin-bottom: px !important;
+}
+
+.swiper-button-next:after {
+  margin-right: 30px;
+}
+
+.swiper-button-prev:after {
+  margin-left: 30px;
+}
+
+/* /* Media Queries */
+
+@media (max-width: 992px) {
+  .h1-home {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .two-Select-div {
+    display: flex;
+    gap: 30px;
+  }
+  .p-select {
+    flex-direction: column;
+  }
+  .p-main-upcoming {
+    width: 95%;
+  }
+  .select-1 {
+    margin: 0 0 6px 0;
+  }
+  .two-div-date {
+    flex-direction: column;
+    width: 100%;
+  }
+  .left-div {
+    width: 100%;
+  }
+
+  .right-div {
+    width: 100%;
+  }
+  .dateAndImg {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-slide {
+    width: 80%;
+  }
+
+  .h1-home {
+    font-size: 35px;
+    align-items: flex-start;
+  }
+  .p-main-upcoming {
+    font-size: 1.6rem;
+  }
+  .two-Select-div {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .h1-home {
+    font-size: 2.4rem;
+  }
+  .p-main-upcoming {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .h6-movie-name {
+    font-size: 1.6rem;
+  }
+  .day {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1.7px solid #7300ff;
+    font-weight: 900;
+    font-size: 25px;
+  }
+
+  .day-image {
+    width: 94px;
+    height: 83px;
+    border-radius: 20px;
+  }
+
+  .btn-div {
+    flex-direction: column;
+  }
+
+  #show-btn {
+    width: 25%;
+    border-radius: 0;
+    height: 30px;
+    border-radius: 10px;
+  }
+  .btn-div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+}

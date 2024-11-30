@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./upcoming_style.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>upcoming</title>
+  </head>
+
+  <body>
+    <div class="search-bar-overlay"></div>
+
+    <header class="container-md">
+      <a href="../index.html" class="logo"
+        ><img src="../images/logo.png" alt="logo" class="logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#">Upcoming</a></li>
+          <li><a href="../index.html#shows">Shows</a></li>
+          <li><a href="../index.html#series">Series</a></li>
+          <li><a href="../index.html#movies">Movies</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main-div">
+      <div class="head-main-container">
+        <div class="container upcoming-container">
+          <div class="row">
+            <h1 class="h1-home">
+              Get Ready for Action: Upcoming<br />
+              Blockbusters You Can't Miss!
+            </h1>
+            <div class="p-select">
+              <p class="p-main-upcoming">
+                Prepare for an adrenaline-packed season with our upcoming
+                blockbusters! From thrilling action sequences to heart-pounding
+                adventures, these movies will keep you on the edge of your seat.
+                Mark your calendars for an unforgettable cinematic experience!
+              </p>
+              <form class="two-Select-div">
+                <select
+                  id="sectionSelect"
+                  onchange="scrollToSection()"
+                  class="select-1"
+                  name="category"
+                  title="category"
+                  id=""
+                >
+                  <option selected value="">Movies</option>
+                  <option value="swiper">movies</option>
+                  <option value="">Action</option>
+                  <option value="">Comedy</option>
+                </select>
+                <select title="years" class="select-2" name="year" id="">
+                  <option selected value="">Years</option>
+                  <option value="2024">2024</option>
+                  <option value="2023">2023</option>
+                  <option value="2022">2022</option>
+                  <option value="2021">2021</option>
+                  <option value="2020">2020</option>
+                </select>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container upcoming-movies">
+        <h1>Upcoming Movies</h1>
+        <h6 class="h6-month">September</h6>
+        <!-- <hr> -->
+        <div class="two-div-date">
+          <div class="left-div">
+            <div class="dateAndImg">
+              <div class="day">14</div>
+              <img src="../images/sep1.png" alt="" class="day-image" />
+              <div class="filmname-p">
+                <h6 class="h6-movie-name">Moana 2</h6>
+                <p class="p-wordwide">Wordwide</p>
+              </div>
+            </div>
+            <div class="dateAndImg">
+              <div class="day">16</div>
+              <img src="../images/sep2.png" alt="" class="day-image" />
+              <div class="filmname-p">
+                <h6 class="h6-movie-name">Openheimer</h6>
+                <p class="p-wordwide">Wordwide</p>
+              </div>
+            </div>
+            <div class="dateAndImg">
+              <div class="day">17</div>
+              <img src="../images/sep3.png" alt="" class="day-image" />
+              <div class="filmname-p">
+                <h6 class="h6-movie-name">
+                  Spiderman:Across the<br />
+                  spideversee
+                </h6>
+                <p class="p-wordwide">Wordwide</p>
+              </div>
+            </div>
+            <div class="dateAndImg">
+              <div class="day">18</div>
+              <img src="../images/sep4.png" alt="" class="day-image" />
+              <div class="filmname-p">
+                <h6 class="h6-movie-name">Avengers:Endgame</h6>
+                <p class="p-wordwide">Wordwide</p>
+              </div>
+            </div>
+          </div>
+          <div class="right-div">
+            <div class="dateAndImg">
+              <div class="day">20</div>
+              <img src="../images/sep5.png" alt="" class="day-image" />
+              <div class="filmname-p">
+                <h6 class="h6-movie-name">Avengers:Doomsday</h6>
+                <p class="p-wordwide">Wordwide</p>
+              </div>
+            </div>
+            <div class="dateAndImg">
+              <div class="day">22</div>
+              <img src="../images/sep6.png" alt="" class="day-image" />
+              <div class="filmname-p">
+                <h6 class="h6-movie-name">The Batman 2</h6>
+                <p class="p-wordwide">Wordwide</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- October -->
+      <div class="container upcoming-movies">
+        <h6 class="h6-month">October</h6>
+        <div class="two-div-date">
+          <div class="left-div">
+            <div class="dateAndImg">
+              <div class="day">2</div>
+              <img src="../images/oct1.png" alt="" class="day-image" />
+              <div class="filmname-p">
+                <h6 class="h6-movie-name">
+                  Mission Impossible:<br />Dead Rocking Part 2
+                </h6>
+                <p class="p-wordwide">Wordwide</p>
+              </div>
+            </div>
+            <div class="dateAndImg">
+              <div class="day">3</div>
+              <img src="../images/oct2.png" alt="" class="day-image" />
+              <div class="filmname-p">
+                <h6 class="h6-movie-name">Openheimer</h6>
+                <p class="p-wordwide">Wordwide</p>
+              </div>
+            </div>
+            <div class="dateAndImg">
+              <div class="day">9</div>
+              <img src="../images/oct3.png" alt="" class="day-image" />
+              <div class="filmname-p">
+                <h6 class="h6-movie-name">
+                  Spiderman:Across the<br />
+                  spideversee
+                </h6>
+                <p class="p-wordwide">Wordwide</p>
+              </div>
+            </div>
+          </div>
+          <div class="right-div">
+            <div class="dateAndImg">
+              <div class="day">12</div>
+              <img src="../images/oct4.png" alt="" class="day-image" />
+              <div class="filmname-p">
+                <h6 class="h6-movie-name">
+                  Captain America:Brave <br />
+                  New World
+                </h6>
+                <p class="p-wordwide">Wordwide</p>
+              </div>
+            </div>
+            <div class="dateAndImg">
+              <div class="day">17</div>
+              <img src="../images/oct5.png" alt="" class="day-image" />
+              <div class="filmname-p">
+                <h6 class="h6-movie-name">Venom:The Last Dance</h6>
+                <p class="p-wordwide">Wordwide</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-div">
+        <button
+          id="show-btn"
+          type="button"
+          data-bs-target="#x"
+          data-bs-toggle="collapse"
+        >
+          Show More<i class="fa-solid fa-caret-down"></i>
+        </button>
+      </div>
+      <!-- November -->
+      <div class="container upcoming-movies collapse" id="x">
+        <h6 class="h6-month">November</h6>
+        <!-- <hr> -->
+        <div class="two-div-date">
+          <div class="left-div">
+            <div class="dateAndImg">
+              <div class="day">1</div>
+              <img src="../images/nov1.png" alt="" class="day-image" />
+              <div class="filmname-p">
+                <h6 class="h6-movie-name">Avengers:Doomsday</h6>
+                <p class="p-wordwide">Wordwide</p>
+              </div>
+            </div>
+            <div class="dateAndImg">
+              <div class="day">3</div>
+              <img src="../images/nov2.jpg" alt="" class="day-image" />
+              <div class="filmname-p">
+                <h6 class="h6-movie-name">Deadpool & Wolverine</h6>
+                <p class="p-wordwide">Wordwide</p>
+              </div>
+            </div>
+            <div class="dateAndImg">
+              <div class="day">5</div>
+              <img src="../images/nov3.png" alt="" class="day-image" />
+              <div class="filmname-p">
+                <h6 class="h6-movie-name">
+                  Kingdom Of The Planet <br />
+                  Of The Apes
+                </h6>
+                <p class="p-wordwide">Wordwide</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ######################################################################### -->
+      <div class="container swiper-js">
+        <div id="swiper" class="swiper">
+          <h1 class="h6-month">Trending Upcoming Movies & Show</h1>
+          <div class="swiper-wrapper">
+            <!-- Slides will be dynamically added here -->
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer section">
+      <div class="all-width">
+        <div class="container">
+          <div>
+            <a href="#"><img src="../images/logo.png" alt="logo" /></a>
+            <p>
+              CineSphere is your go-to platform for a world of entertainment,
+              offering a vast library of films, TV shows, and exclusive content.
+            </p>
+            <ul>
+              <li>
+                <a href="#" aria-label="facebook-icon">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" aria-label="twitter-icon">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" aria-label="instagram-icon">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="box">
+            <h2 class="subtitle">Company</h2>
+            <ul class="list">
+              <li><a href="#" class="link">About us</a></li>
+              <li><a href="#" class="link">Careers</a></li>
+              <li><a href="#" class="link">Press</a></li>
+              <li><a href="#" class="link">Investors</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <h2 class="subtitle">Help & Support</h2>
+            <ul class="list">
+              <li><a href="#" class="link">Help Center</a></li>
+              <li><a href="#" class="link">FAQs</a></li>
+              <li><a href="#" class="link">Support</a></li>
+              <li><a href="#" class="link">Account & Billing</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <h2 class="subtitle">Legal</h2>
+            <ul class="list">
+              <li><a href="#" class="link">Terms of Services</a></li>
+              <li><a href="#" class="link">Privacy Policy</a></li>
+              <li><a href="#" class="link">Cookie Preferences</a></li>
+              <li><a href="#" class="link">Accessibility</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p>ⓒAll Rights Reserved. 2024 Cinesphere Movies</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+    <script src="./upcoming.js"></script>
+  </body>
+</html>
